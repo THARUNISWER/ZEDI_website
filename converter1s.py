@@ -23,8 +23,8 @@ def create_file_1s(start_date_time, end_date_time, params, node):
 
     end_file.write("DATE_TIME,")
 
-    VOLTAGE = params[0]
-    CURRENT = params[1]
+    VOLTAGE = params[1]
+    CURRENT = params[0]
     FREQUENCY = params[2]
     POWER = params[3]
 
