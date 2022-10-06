@@ -54,7 +54,10 @@ def create_file_1s(start_date_time, end_date_time, params, node):
         if FREQUENCY == 1:
             out_line += (words[7] + DELIM + words[8] + DELIM + words[9] + DELIM)
         if POWER == 1:
-            out_line += (words[10] + DELIM + words[11] + DELIM + words[12] + DELIM + words[13] + DELIM)
+            try:
+                out_line += (words[10] + DELIM + words[11] + DELIM + words[12] + DELIM + words[13] + DELIM)
+            except:
+                out_line += ("" + DELIM + "" + DELIM + "" + DELIM + "" + DELIM)
         return out_line
 
 
